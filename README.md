@@ -26,9 +26,9 @@ peek() // Return the element from the front of the queue.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" width="240" alt="Queue data structure">
 
-#### Why not use the javascript / *typescript* array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
+### Why not use the javascript / *typescript* array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
 
-That is a valid question.
+That is a good question.
 
 The default array.shift() method works the same as dequeue(),
 
