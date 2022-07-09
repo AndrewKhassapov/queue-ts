@@ -22,12 +22,12 @@ export class Queue{
     
     /**
      * Remove from front of queue.
-     * @returns {any} Front of queue.
-     * @reference shift() can be used but has an O(n) operation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+     * @returns {any} Front of queue. Undefined if queue is empty.
+     * @reference shift() can be used but has O(n) complexity: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
      */
     public dequeue():any{
         // Maximum array length to remove all deleted elements and restart queue.
-        // O(1) operation until limit. Then O(n) operation for 'n' elements in queue.
+        // O(1) operation until limit. Then O(n) complexity for 'n' elements in queue.
         // Increase this to improve performance.
         const LIMIT:number = 2147483647;
 
@@ -52,7 +52,7 @@ export class Queue{
     
     /**
      * Show the front of queue without dequeuing.
-     * @returns {any} Front of queue.
+     * @returns {any} Front of queue. Undefined if queue is empty.
      */
     public peek():any{
         if(this.start < this.queue.length){
