@@ -7,7 +7,7 @@ export class Queue{
      * Increase this to improve performance.
      * @constant
      */
-    private readonly LIMIT:number = 2147483647;
+    private readonly LIMIT:number = Number.MAX_SAFE_INTEGER-1;
     
     private queue:any[] = [];
     private start:number = 0;
