@@ -1,4 +1,13 @@
 export class Queue{
+
+    /**
+     * Maximum array length. 
+     * To remove all deleted elements and restart queue.
+     * O(1) operation until limit. Then O(n) complexity for 'n' elements in queue.
+     * Increase this to improve performance.
+     * @constant
+     */
+    private readonly LIMIT:number = 2147483647;
     
     private queue:any[] = [];
     private start:number = 0;
@@ -26,19 +35,15 @@ export class Queue{
      * @reference shift() can be used but has O(n) complexity: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
      */
     public dequeue():any{
-        // Maximum array length to remove all deleted elements and restart queue.
-        // O(1) operation until limit. Then O(n) complexity for 'n' elements in queue.
-        // Increase this to improve performance.
-        const LIMIT:number = 2147483647;
 
         if(this.start < this.queue.length){
             let element:any = this.queue[this.start];
             delete this.queue[this.start];
             this.start++;
             
-            if(this.start >= LIMIT){
+            if(this.start >= this.LIMIT){
                 let newQueue:any[] = [];
-                for(let i:number = LIMIT; i < this.queue.length; i++){
+                for(let i:number = this.LIMIT; i < this.queue.length; i++){
                     newQueue.push(this.queue[i]);
                 }
                 this.queue = newQueue;
