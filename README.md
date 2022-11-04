@@ -22,7 +22,11 @@ dequeue() // Remove the element from the front of the queue and return it.
 peek() // Return the element from the front of the queue.
 ```
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" width="240" alt="Queue data structure">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="data_queue-light.png">
+  <source media="(prefers-color-scheme: light)" srcset="data_queue-dark.png">
+  <img alt="Queue data structure illustration. Credit to Vegpuff." width="240" src="data_queue.png">
+</picture>
 
 ### Why not use the javascript / _typescript_ array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
 
