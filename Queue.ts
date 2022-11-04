@@ -15,6 +15,7 @@ export class Queue{
     /**
      * New queue.
      * @param {any[]} args Optional: Array of arguments to be enqueued.
+     * @example myQueue = new Queue(1, 2, 3)
      */
     constructor(...args:any[]){
         this.queue = [...args];
