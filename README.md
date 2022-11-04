@@ -1,21 +1,19 @@
-Typescript queue
-======
+# Optimized Typescript queue
 
-I was working on a javascript / *typescript* challenge and noticed there is no inbuilt queue data structure.
+I was working on a javascript / _typescript_ challenge and noticed there is no inbuilt queue data structure.
 
 So here is one to copy and paste for your projects.
 
 Neatly documented to make learning easier.
 
-What is a queue?
------
+## What is a queue?
+
 #### A queue is a First-In-First-Out (FIFO) data structure where the first element added to the queue is the first one to be removed.
 
-How is it used?
------
+## How is it used?
 
 ```javascript
-new Queue([OPTIONAL ARGUMENTS]) // To create a new queue.
+new Queue([OPTIONAL ARGUMENTS]) // Create a new queue. With optional list of elements.
 
 enqueue(element) // Add a new element to the end of the queue.
 
@@ -26,7 +24,7 @@ peek() // Return the element from the front of the queue.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/1920px-Data_Queue.svg.png" width="240" alt="Queue data structure">
 
-### Why not use the javascript / *typescript* array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
+### Why not use the javascript / _typescript_ array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
 
 That is a good question.
 
