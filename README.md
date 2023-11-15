@@ -13,13 +13,27 @@ Neatly documented to make learning easier.
 ## How is it used?
 
 ```javascript
+import * from "any/Queue.ts" // Import a queue that can accept all types.
+
 new Queue([OPTIONAL ARGUMENTS]) // Create a new queue. With optional list of elements.
+```
 
-enqueue(element) // Add a new element to the end of the queue.
+OR
 
-dequeue() // Remove the element from the front of the queue and return it.
+```javascript
+import * from "generic/Queue.ts" // Import a queue of defined type.
 
-peek() // Return the element from the front of the queue.
+new Queue<Type>([OPTIONAL ARGUMENTS]) // Create a new queue of type Type. With optional list of elements.
+```
+
+THEN
+
+```javascript
+enqueue(element); // Add a new element to the end of the queue.
+
+dequeue(); // Remove the element from the front of the queue and return it.
+
+peek(); // Return the element from the front of the queue.
 ```
 
 <picture>
