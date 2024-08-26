@@ -67,9 +67,6 @@ export class Queue<Type = any>{
         return undefined; // Queue is empty.
     }
     
-
-
-
     /**
      * Size of queue.
      * @returns {number} Size of queue.

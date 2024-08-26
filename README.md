@@ -34,6 +34,8 @@ enqueue(element); // Add a new element to the end of the queue.
 dequeue(); // Remove the element from the front of the queue and return it.
 
 peek(); // Return the element from the front of the queue.
+
+size || getSize(); // Return the queue size.
 ```
 
 <picture>
