@@ -71,8 +71,16 @@ export class Queue{
      * Size of queue.
      * @returns {number} Size of queue.
      */
-    public size():number{
+    public get size():number{
         return this.queue.length - this.start;
+    }
+
+    /**
+     * Size of queue.
+     * @returns {number} Size of queue.
+     */
+    public getSize():number{
+        return this.size;
     }
     
     /**
