@@ -25,9 +25,10 @@ export class Queue{
     /**
      * Add to end of queue.
      * @param {any} value Value to add to end of queue.
+     * @param {any[]} values Optional: Value(s) to add to end of queue.
      */
-    public enqueue(value:any):void{
-        this.queue.push(value);
+    public enqueue(value:any, ...values:any[]):void{
+        this.queue.push(value, ...values);
     }
     
     /**
@@ -86,6 +87,7 @@ export class Queue{
     /**
      * Queue as string.
      * @returns {string} String representation of queue, eg. "[ 1, 2, 3 ]".
+     * @override
      */
     public toString():string{
         if(this.start >= this.queue.length){
