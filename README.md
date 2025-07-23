@@ -29,7 +29,7 @@ new Queue<Type>([OPTIONAL ARGUMENTS]) // Create a new queue of type Type. With o
 THEN
 
 ```javascript
-enqueue(element); // Add a new element to the end of the queue.
+enqueue(element, [OPTIONAL ELEMENTS]); // Add a new element(s) to the end of the queue.
 
 dequeue(); // Remove the element from the front of the queue and return it.
 
