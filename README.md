@@ -39,9 +39,9 @@ size || getSize(); // Return the queue size.
 ```
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="data_queue-light.png">
-  <source media="(prefers-color-scheme: light)" srcset="data_queue-dark.png">
-  <img alt="Queue data structure illustration. Credit to Vegpuff." width="440" src="data_queue.png">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/data_queue-light.png">
+  <source media="(prefers-color-scheme: light)" srcset="readme/data_queue-dark.png">
+  <img alt="Queue data structure illustration. Credit to Vegpuff." width="440" src="readme/data_queue.png">
 </picture>
 
 ### Why not use the javascript / _typescript_ array.push(element) and [array.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) methods?
